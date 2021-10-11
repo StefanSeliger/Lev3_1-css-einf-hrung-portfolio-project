@@ -18,6 +18,10 @@ font-family: 'Work Sans', sans-serif;
     text-decoration: none;
 }
 
+h1, h2 {
+    font-size: 6rem;
+}
+
 /* ===============================
         HEADER STYLES
 =============================== */
@@ -36,7 +40,6 @@ header div p, h1, h2 {
 
 header div h1 {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 6rem;
     font-weight: lighter;
     margin: 8% auto 10% auto; 
 }
@@ -48,7 +51,6 @@ header div img {
 
 header div h2 {
     text-transform: uppercase;
-    font-size: 6rem;
     font-weight: 380;
 }
 
@@ -56,6 +58,7 @@ header div h2 {
         MAIN STYLES
 =============================== */
 
+/* allgemeine Styles */
 main section {
     padding: 10%; 
     font-size: 1.5rem;
@@ -88,7 +91,6 @@ main section p:first-child::before  {
 
 main section h2 {
     font-family: 'Didact Gothic', sans-serif;
-    font-size: 6rem;
     margin: 8% 0 3% 0; 
     font-weight: lighter;
     text-transform: uppercase;
@@ -116,7 +118,7 @@ main section div p {
 }
 
 
-
+/* Animation Sections */
 main section:nth-of-type(odd) div a:hover {
     background: white; 
     color: black; 
@@ -162,6 +164,7 @@ main section:nth-of-type(4) {
     background-size: cover;
 }
 
+/* Article Styles */
 main article {
     background: #000; 
     font-family: 'Work Sans', sans-serif;
@@ -187,15 +190,10 @@ main article p {
 }
 
 main article a {
-    font-size: 3rem;
-    margin-left: 50%;
-    text-decoration: none;
-}
-
-main article a {
     color: #fff; 
     font-size: 3rem;
     margin-left: 50%;
+    text-decoration: none;
 }
 
 main article a:hover {
@@ -229,6 +227,17 @@ footer p {
     text-align: center;
 }
 
-footer p:hover {
-    transform: scale(3);
+
+/* Animation Herz */
+footer p {
+    padding: 4%; 
+    animation-name: Herz; 
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes Herz {
+    from {font-size: 1rem;}
+    to {font-size: 2rem;}
 }
