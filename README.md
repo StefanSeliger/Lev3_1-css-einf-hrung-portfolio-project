@@ -7,3 +7,5 @@ Ein Portfolio enthält Beispiele für deine Arbeit und deinen Stil. Es ist oft d
 
 Heute ist deine Aufgabe ein minimalistisches Portfolio zu erstellen.
 
+
+View: https://stefanseliger.github.io/Portfolio_Bootcamp/
